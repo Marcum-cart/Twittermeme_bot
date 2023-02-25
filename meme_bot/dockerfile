@@ -1,0 +1,14 @@
+FROM python:3.10
+
+ADD meme+retweet_bot.py .
+ADD Keys.txt .
+
+COPY /Media /usr/local/Media
+
+
+Run pip install tweepy 
+Run pip install datetime
+
+
+CMD [ "python", "./meme+retweet_bot.py"]
+
